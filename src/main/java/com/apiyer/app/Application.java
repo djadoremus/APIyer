@@ -14,6 +14,7 @@ public class Application {
     public static void main(String[] args) {
         try {
             SpringApplication.run(Application.class, args);
+
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setServiceAccount(new FileInputStream("src/main/resources/APIyer-7ae5b8a81325.json"))
                     .setDatabaseUrl("https://apiyer-82be8.firebaseio.com/")
